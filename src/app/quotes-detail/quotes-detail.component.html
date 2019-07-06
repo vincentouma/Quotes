@@ -1,5 +1,7 @@
 
 
-<p>
-    {{quotes.description}}
-</p>
+<p>{{quotes.description}}</p>
+
+<p>This qoute was posted on {{quote.completeDate|dateCount}} days</p>
+
+<button (click)= 'goalDelete(true)'>Delete Goal</button>

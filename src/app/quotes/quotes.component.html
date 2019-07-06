@@ -1,7 +1,7 @@
 <!-- <p>quotes works!</p> -->
 <div style="text-align:center">
     <h1>
-      Welcome to {{ title }}!
+      Welcome to the jungle of wisdom{{ title }}!
     </h1>
     <img width="300" alt="Angular Logo" src="../assets/tumblr_static_quoteslogogallery1.jpg">
     </div>
@@ -10,9 +10,10 @@
     <hr>
     <ul>
       <div *ngFor='let quote of quotes;let i = index'>
-        <li>{{quote.name}}</li>
-        <button (click)='toggleDetails(i)'>Toggle Details</button>
-        <app-quotes-detail *ngIf='quotes.shoeDescription'[quotes]='quote'></app-quotes-detail>
+        <li>{{quote.name}} due on {{quotes.completeDate|date|uppercase}}</li>
+        <button (click)='toggleDetail(i)'>Toggle Details</button>
+        
+        <app-quotes-detail *ngIf='quotes.showDescription' [quotes]='quotes' (isComplete) = 'deleteQuotes($event,i)'></app-quotes-detail>
       </div>
     </ul>
   </div>
