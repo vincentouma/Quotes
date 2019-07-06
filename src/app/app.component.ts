@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Quotes } from './qoutes';
+import { quotes } from './quotes';
 
 @Component({
   selector: 'app-root',
@@ -7,17 +7,17 @@ import { Quotes } from './qoutes';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  qoutes:Quotes[]=[
-    {id:1, name:'Watch finding Nemo'},
-    {id:2,name:'Buy Cookies'},
-    {id:3,name:'Get new Phone Case'},
-    {id:4,name:'Get Dog Food'},
-    {id:5,name:'Solve math homework'},
-    {id:6,name:'Plot my world domination plan'},
-  ];;
+  // qoutes:quotes[]=[
+  //   {id:1, name:'Watch finding Nemo'},
+  //   {id:2,name:'Buy Cookies'},
+  //   {id:3,name:'Get new Phone Case'},
+  //   {id:4,name:'Get Dog Food'},
+  //   {id:5,name:'Solve math homework'},
+  //   {id:6,name:'Plot my world domination plan'},
+  // ];;
 
   constractor(){
-    // this.qoutes = ['Watch finding Nemo', 'Buy cookies', 'Get new phone case']
+    
   }
   
 }

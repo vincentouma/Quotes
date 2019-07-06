@@ -1,0 +1,16 @@
+<!-- <p>quotes works!</p> -->
+<div style="text-align:center">
+    <h1>
+      Welcome to {{ title }}!
+    </h1>
+    <img width="300" alt="Angular Logo" src="../assets/tumblr_static_quoteslogogallery1.jpg">
+    </div>
+<div>
+    <h1>My Quotes</h1>
+    <hr>
+    <ul>
+      <li *ngFor='let quote of quotes'>
+        {{quote.name}}
+      </li>
+    </ul>
+  </div>
